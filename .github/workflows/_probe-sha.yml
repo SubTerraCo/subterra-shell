@@ -1,5 +1,0 @@
-name: Probe SHA Shell
-on: [push, workflow_dispatch]
-jobs:
-  call:
-    uses: SubTerraCo/subterra-governance/.github/workflows/_probe-called.yml@61b30b951a5488070d1217fef293606f5b3c8bc1

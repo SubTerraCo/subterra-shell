@@ -8,7 +8,7 @@ on:
 
 jobs:
   ci:
-    uses: SubTerraCo/subterra-governance/.github/workflows/ci-node.yml@master
+    uses: SubTerraCo/subterra-governance/.github/workflows/ci-node.yml@v1
     with:
       working-directory: "."
       run-lint: false
