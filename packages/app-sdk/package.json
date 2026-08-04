@@ -1,0 +1,25 @@
+{
+  "name": "@subterra/app-sdk",
+  "version": "26.8.3",
+  "description": "SubTerra Apps SDK — twin of @subterra/integration-sdk with an identical API",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc -b",
+    "type-check": "tsc -b"
+  },
+  "dependencies": {
+    "@subterra/sdk-contract": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.0"
+  }
+}

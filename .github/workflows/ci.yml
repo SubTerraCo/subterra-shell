@@ -1,0 +1,21 @@
+name: Shell CI
+
+on:
+  push:
+    branches: [dev, master, main, "v**"]
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Check scripts
+        run: |
+          node scripts/check-governance.mjs || echo "::warning::governance sibling not present in CI checkout (expected until composite checkout)"
+          node -e "JSON.parse(require('fs').readFileSync('package.json','utf8'))"
+      # When governance is published, switch to:
+      # uses: PoweredUpLabs/subterra-governance/.github/workflows/ci-node.yml@v1
