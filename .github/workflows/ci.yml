@@ -7,10 +7,8 @@ on:
   pull_request:
 
 jobs:
-  # Owner is `PoweredUpLabs` only until the SubTerra-OS org migration lands;
-  # bump this ref to SubTerra-OS/subterra-governance after the transfer.
   ci:
-    uses: PoweredUpLabs/subterra-governance/.github/workflows/ci-node.yml@v1
+    uses: SubTerraCo/subterra-governance/.github/workflows/ci-node.yml@v1
     with:
       working-directory: "."
       run-lint: false
