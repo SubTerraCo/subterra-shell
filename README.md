@@ -4,30 +4,44 @@ Global Shell for the SubTerra OS polyrepo — **Apps** and **Integrations** mark
 
 | | |
 |--|--|
-| **Repo** | `PoweredUpLabs/subterra-shell` |
-| **APP** | `ST` |
-| **Governance** | sibling `../governance` → `PoweredUpLabs/subterra-governance` |
+| **Repo** | `SubTerraCo/subterra-shell` |
+| **APP** | `ST` (admin) · `NX` Nexus reserved |
+| **Governance** | sibling `../governance` → `SubTerraCo/subterra-governance` |
 
-## R0 status
+## R1 status
 
-DevOps / CI Ops bootstrap only. Marketplace UI is **R1**. Twin SDKs (`@subterra/app-sdk`, `@subterra/integration-sdk`) are **R2**.
+Basic chrome + marketplace grid:
+
+- Shared `@subterra/shell-ui` (TopBar, BottomNav with Search → marketplace, 3×4 AppGrid)
+- `apps/web` — Next.js admin shell
+- `apps/desktop` — Electron + Vite admin shell
+
+Twin SDKs remain R0 scaffolds. App mounting / Nexus split / NFC auth are later.
 
 ## Scripts
 
 ```bash
-pnpm release:rollover      # sync ROADMAP to today + stamp package.json batch
-pnpm release:next-batch    # print next batch id and append ROADMAP row
+pnpm install
+pnpm dev:web              # Next.js on :3100
+pnpm dev:desktop          # Electron + Vite
+pnpm build:web
+pnpm build:desktop
+pnpm type-check
 pnpm validate:governance-link
+pnpm release:rollover
 ```
 
-## Layout (upcoming)
+## Layout
 
 ```
 shell/
   packages/
-    app-sdk/           # R2
-    integration-sdk/   # R2
-    ui/                # R1
-  apps/                # Electron / web / mobile hosts — R1+
+    sdk-contract/
+    app-sdk/
+    integration-sdk/
+    shell-ui/          # R1 chrome + marketplace grid
+  apps/
+    web/               # Next.js
+    desktop/           # Electron + Vite
   Docs/Working Docs-Features-Incidents/
 ```

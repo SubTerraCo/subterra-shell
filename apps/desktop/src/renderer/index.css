@@ -1,0 +1,7 @@
+@import "tailwindcss";
+@import "@subterra/shell-ui/styles";
+@source "../../../../packages/shell-ui/src";
+
+:root {
+  --title-bar-height: 40px;
+}

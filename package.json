@@ -1,6 +1,6 @@
 {
   "name": "subterra-shell",
-  "version": "26.8.3-b4",
+  "version": "26.8.4-b1",
   "private": true,
   "description": "SubTerra Shell — Global Shell with Apps + Integrations marketplaces",
   "type": "module",
@@ -9,13 +9,18 @@
     "node": ">=22.13.0",
     "pnpm": ">=11.0.0"
   },
-  "subterraShellVersion": "v26.08.03b4",
+  "subterraShellVersion": "v26.08.04b1",
   "scripts": {
     "release:rollover": "node scripts/daily-release-rollover.mjs --stamp",
     "release:next-batch": "node scripts/daily-release-rollover.mjs --next-batch",
     "validate:governance-link": "node scripts/check-governance.mjs",
     "type-check": "pnpm -r --if-present type-check",
-    "build": "pnpm -r --if-present build"
+    "build": "pnpm -r --if-present build",
+    "build:web": "pnpm --filter @subterra/shell-web build",
+    "build:desktop": "pnpm --filter @subterra/shell-desktop build",
+    "dev": "pnpm --filter @subterra/shell-web dev",
+    "dev:web": "pnpm --filter @subterra/shell-web dev",
+    "dev:desktop": "pnpm --filter @subterra/shell-desktop dev"
   },
   "devDependencies": {}
 }
