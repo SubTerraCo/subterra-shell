@@ -1,5 +1,7 @@
 # SubTerra Shell Roadmap
 
+> **Superseded for new work.** The product blueprint is `subterra-governance` `Docs/ARCHITECTURE.md` (GV-0004). This file is the August 2026 batch log for the Electron and Next prototype. Do not build `apps/nexus`, do not add Apps versus Integrations tabs, and do not treat `ST` as the shell to ship. The shell to ship is Luna OS (`LO`, Tauri) plus the web shell.
+
 > **Release:** v26.08.04  
 > **Last Updated:** 2026-08-04  
 > **Status:** Sprint 1 — R1 basic chrome + marketplace grid  
