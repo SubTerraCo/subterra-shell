@@ -75,7 +75,7 @@ export function TopBar({
             <button
               type="button"
               onClick={onProfilePress}
-              className="flex h-10 w-10 items-center justify-center overflow-hidden rounded-full border-2 border-border-default transition-colors hover:border-accent-amber"
+              className="flex h-10 w-10 items-center justify-center overflow-hidden rounded-full border-2 border-border-default transition-colors hover:border-accent-purple"
               aria-label="Profile"
             >
               {userAvatarUrl ? (
@@ -85,7 +85,7 @@ export function TopBar({
                   className="h-full w-full object-cover"
                 />
               ) : (
-                <span className="flex h-full w-full items-center justify-center bg-accent-amber text-sm font-medium text-bg-primary">
+                <span className="flex h-full w-full items-center justify-center bg-accent-purple text-sm font-medium text-text-primary">
                   {userName ? getInitials(userName) : "ST"}
                 </span>
               )}

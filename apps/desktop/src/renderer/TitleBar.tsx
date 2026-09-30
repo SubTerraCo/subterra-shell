@@ -18,7 +18,7 @@ export function TitleBar() {
   return (
     <div className="drag-region flex h-10 shrink-0 items-center justify-between border-b border-border-default bg-bg-primary px-4">
       <div className="flex items-center gap-2">
-        <span className="no-drag text-lg font-bold text-accent-amber">⬡</span>
+        <span className="no-drag text-lg font-bold text-accent-purple">⬡</span>
         <span className="text-sm font-semibold text-text-primary">
           SubTerra Shell
         </span>

@@ -1,5 +1,5 @@
 export { cn, getInitials } from "./lib/utils";
-export { colors, layout } from "./styles/tokens";
+export { colors, layout, typography, spacing } from "./styles/tokens";
 export { TopBar, type TopBarProps } from "./components/top-bar";
 export {
   BottomNav,

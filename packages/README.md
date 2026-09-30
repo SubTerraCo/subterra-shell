@@ -5,7 +5,7 @@
 | `sdk-contract` | **R0 scaffold** | Shared contract — single source of truth for twin-SDK parity. Internal, not published |
 | `app-sdk` | **R0 scaffold** | `@subterra/app-sdk` — `SDK_ROLE = "app"` |
 | `integration-sdk` | **R0 scaffold** | `@subterra/integration-sdk` — `SDK_ROLE = "integration"` |
-| `shell-ui` | **R1 scaffold** | TopBar, BottomNav, AppGrid, tokens — consumed by `apps/web` + `apps/desktop` |
+| `shell-ui` | **R1 scaffold** | TopBar, BottomNav, AppGrid, Powerline tokens — consumed by `apps/web` + `apps/desktop` |
 | `sync` / `auth` | R3 | |
 
 ## Twin-SDK parity
