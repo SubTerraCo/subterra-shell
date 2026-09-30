@@ -1,5 +1,5 @@
 /**
- * Leftover SubTerra Shell design tokens — until Luna OS / `packages/open-ui` fold-in.
+ * Leftover SubTerra Shell design tokens — until SubTerra Metro / `packages/open-ui` fold-in.
  *
  * Color: Powerline four-color system. Purple `#400080` is primary fill
  * (replaces amber seed `#e8a54b`). Pink is the on-dark accent — purple is too
@@ -43,7 +43,7 @@ export const colors = {
 } as const;
 
 /**
- * INTERIM typography until Luna OS names a product family.
+ * INTERIM typography until SubTerra Metro names a product family.
  * Live CSS stack is Inter / SF Pro Display / system sans (see `globals.css`).
  * Scale is Material 3 (sp / px at 1:1).
  */
