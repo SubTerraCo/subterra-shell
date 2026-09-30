@@ -73,7 +73,7 @@ function AppTile({
       className={cn(
         "relative flex aspect-square flex-col items-center justify-center gap-2 rounded-2xl border p-3",
         "bg-bg-secondary transition-colors",
-        "border-border-default hover:border-accent-amber hover:bg-bg-tertiary",
+        "border-border-default hover:border-accent-pink hover:bg-bg-tertiary",
         isReserved && "opacity-70",
       )}
     >
@@ -82,7 +82,7 @@ function AppTile({
           "flex h-12 w-12 items-center justify-center rounded-xl",
           tile.role === "integration"
             ? "bg-accent-teal/20 text-accent-teal"
-            : "bg-accent-amber/20 text-accent-amber",
+            : "bg-accent-pink/20 text-accent-pink",
         )}
       >
         <Icon className="h-6 w-6" />

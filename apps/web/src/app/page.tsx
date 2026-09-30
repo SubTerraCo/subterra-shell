@@ -10,8 +10,8 @@ export default function HomePage() {
       </p>
       <div className="rounded-2xl border border-border-default bg-bg-secondary p-6">
         <p className="text-sm text-text-tertiary">
-          APP <span className="text-accent-amber">ST</span> · audience{" "}
-          <span className="text-accent-amber">admin</span> · GV-0002 dual-shell
+          APP <span className="text-accent-pink">ST</span> · audience{" "}
+          <span className="text-accent-pink">admin</span> · GV-0002 dual-shell
           core (Nexus deferred)
         </p>
       </div>

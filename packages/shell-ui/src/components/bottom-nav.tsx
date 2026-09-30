@@ -99,9 +99,9 @@ function ActionButton({
         "flex h-12 w-12 items-center justify-center rounded-xl",
         "transition-all active:scale-95",
         isPrimary
-          ? "bg-accent-amber text-bg-primary shadow-lg hover:bg-accent-amber-light"
+          ? "bg-accent-purple text-text-primary shadow-lg hover:opacity-90"
           : isActive
-            ? "bg-accent-amber/20 text-accent-amber"
+            ? "bg-accent-pink/20 text-accent-pink"
             : "bg-bg-tertiary text-text-secondary hover:text-text-primary",
       )}
       aria-label={label}
@@ -130,7 +130,7 @@ function MainNavButton({
         "flex flex-col items-center justify-center gap-1 py-2",
         "transition-colors",
         isActive
-          ? "text-accent-amber"
+          ? "text-accent-pink"
           : "text-text-tertiary hover:text-text-secondary",
       )}
       aria-label={item.label}
