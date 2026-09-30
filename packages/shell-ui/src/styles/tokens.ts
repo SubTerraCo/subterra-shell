@@ -1,7 +1,10 @@
 /**
  * Leftover SubTerra Shell design tokens — until Luna OS / `packages/open-ui` fold-in.
  *
- * Color: Powerline four-color system. Purple is primary (replaces amber seed `#e8a54b`).
+ * Color: Powerline four-color system. Purple `#400080` is primary fill
+ * (replaces amber seed `#e8a54b`). Pink is the on-dark accent — purple is too
+ * dark to use as text on this background. Light blue and teal are live tokens;
+ * leftover chrome keeps teal on integration tiles.
  * Type: INTERIM — no product font is locked; Material 3 type scale.
  * Space: 4dp grid (Material 3).
  */
@@ -29,7 +32,7 @@ export const colors = {
   border: {
     default: "#2a3040",
     hover: "#3a4255",
-    focus: "#400080",
+    focus: "#ED1CAD",
   },
   status: {
     success: "#22c55e",

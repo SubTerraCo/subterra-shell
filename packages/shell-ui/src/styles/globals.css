@@ -1,8 +1,9 @@
 /* Shared leftover SubTerra Shell tokens + utilities (until Luna OS / open-ui fold-in).
    Apps must @import "tailwindcss" before this file.
 
-   Color: Powerline four-color system. Purple `#400080` is primary
-   (replaces amber seed `#e8a54b`).
+   Color: Powerline four-color system. Purple `#400080` is primary fill
+   (replaces amber seed `#e8a54b`). Pink is the on-dark accent (readable on
+   this background). Light blue and teal are live tokens.
    Type: INTERIM — Inter / SF Pro Display / system sans; Material 3 type scale
    is documented in tokens.ts (not a locked product family).
    Space: 4dp grid (Material 3). */
@@ -25,7 +26,7 @@
 
   --border-default: #2a3040;
   --border-hover: #3a4255;
-  --border-focus: #400080;
+  --border-focus: #ED1CAD;
 
   --bottom-nav-height: 64px;
   --top-bar-height: 56px;
@@ -80,7 +81,7 @@
   }
 
   :focus-visible {
-    outline: 2px solid var(--accent-purple);
+    outline: 2px solid var(--accent-pink);
     outline-offset: 2px;
   }
 }

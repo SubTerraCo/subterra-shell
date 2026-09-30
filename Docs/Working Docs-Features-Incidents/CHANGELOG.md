@@ -2,7 +2,7 @@
 
 ## Unreleased
 
-- Powerline four-color tokens in leftover `@subterra/shell-ui` (purple primary; amber seed `#e8a54b` removed). INTERIM Material 3 type scale + 4dp spacing documented.
+- Powerline four-color tokens in leftover `@subterra/shell-ui` (purple primary fill, pink on-dark accent; amber seed `#e8a54b` removed). INTERIM Material 3 type scale + 4dp spacing documented.
 
 ## v26.08.03
 

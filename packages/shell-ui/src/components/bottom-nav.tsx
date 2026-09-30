@@ -101,7 +101,7 @@ function ActionButton({
         isPrimary
           ? "bg-accent-purple text-text-primary shadow-lg hover:opacity-90"
           : isActive
-            ? "bg-accent-purple/20 text-accent-purple"
+            ? "bg-accent-pink/20 text-accent-pink"
             : "bg-bg-tertiary text-text-secondary hover:text-text-primary",
       )}
       aria-label={label}
@@ -130,7 +130,7 @@ function MainNavButton({
         "flex flex-col items-center justify-center gap-1 py-2",
         "transition-colors",
         isActive
-          ? "text-accent-purple"
+          ? "text-accent-pink"
           : "text-text-tertiary hover:text-text-secondary",
       )}
       aria-label={item.label}

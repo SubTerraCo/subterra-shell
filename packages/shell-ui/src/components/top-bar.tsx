@@ -75,7 +75,7 @@ export function TopBar({
             <button
               type="button"
               onClick={onProfilePress}
-              className="flex h-10 w-10 items-center justify-center overflow-hidden rounded-full border-2 border-border-default transition-colors hover:border-accent-purple"
+              className="flex h-10 w-10 items-center justify-center overflow-hidden rounded-full border-2 border-border-default transition-colors hover:border-accent-pink"
               aria-label="Profile"
             >
               {userAvatarUrl ? (
